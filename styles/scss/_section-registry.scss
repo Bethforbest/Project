@@ -1,0 +1,99 @@
+.registry {
+    font-family: $font-family;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    background: url(/img/registry-form-background.png);
+    height: 864px;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    &__container {
+        display: flex;
+        background-color: white;
+        height: 664px;
+        width: 1012px;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding: 85px;
+    }
+}
+
+.zagolovok {
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 48px;
+    padding-bottom: 48px;
+}
+
+.left-column {
+    width: 399px;
+    height: 400px;
+}
+.right-column {
+    width: 399px;
+    height: 400px;
+}
+
+.input-text {
+    width: 399px;
+    height: 45px;
+    border-radius: 5px;
+}
+.input-date {
+    width: 115px;
+    height: 45px;
+    border-radius: 5px;
+}
+.select-style {
+    width: 399px;
+    height: 45px;
+    border-radius: 5px;
+    background: none;
+}
+
+.input-item {
+    padding-top: calc(68px-45px-14px);
+    display: flex;
+    align-content: flex-end;
+    flex-direction: column;
+    height: 68px;
+    width: 399px;
+    font-size: 14px;
+    color: #454545;
+    margin-bottom: 27px;
+}
+.date {
+    padding-top: calc(68px-45px-14px);
+    display: flex;
+    align-content: flex-end;
+    flex-direction: row;
+    height: 68px;
+    width: 68px;
+    font-size: 14px;
+    color: #454545;
+    margin-bottom: 27px;
+}
+.date-picker {
+    height: 68px;
+    width: 115px;
+    &__item {
+        
+    }
+}
+
+.select-item {
+    padding-top: calc(68px-45px-14px);
+    display: flex;
+    align-content: flex-end;
+    flex-direction: column;
+    height: 68px;
+    width: 399px;
+    font-size: 14px;
+    color: #454545;
+    margin-bottom: 27px;
+}

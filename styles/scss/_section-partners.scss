@@ -1,0 +1,24 @@
+
+
+.partners {
+    margin-top: 152px;
+    margin-bottom: 105px;
+    position: relative;
+    &__slider {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        align-items: center;
+        justify-content: space-evenly;
+        height: 313px;
+        width: 100%;
+        max-width: 1920px;
+        margin: 0 auto;
+        border: 1px solid red;
+    }
+}
+
+.partners__slider>img {
+    height: 162px;
+    width: 303px;
+}

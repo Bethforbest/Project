@@ -1,0 +1,24 @@
+.offer {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 730px;
+    width: 100%;
+    text-align: center;
+    &__container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+}
+section[class="offer"]>span {
+    margin: 0 auto;
+    max-width: 447px;
+    margin-bottom: 52px;
+    font-size: 16px;
+}
+section[class="offer"]>h1 {
+    text-transform: uppercase;
+    font-family: $font-family;
+    font-size: 48px;
+}
