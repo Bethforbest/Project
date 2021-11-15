@@ -6,35 +6,24 @@
 .banner {
     background: url(/img/index.png);
     height: 100vh;
-    width: 100%;
+    width: 1920px;
     background-size: cover;
     background-repeat: no-repeat;
     position: relative;
     display: flex;
     align-items: center;
-    justify-content: center;
-    .wrapper {
-        padding-top: 30px;
-        display: grid;
-        align-content: center;
-        justify-content: center;
-        grid-template-columns: 1fr 1fr 1fr 1fr;
-        &-text {
-            display: flex;
-            color: white;
-            font-style: normal;
-            font-size: 18px;
-            font-weight: bold;
-            font-family: sans-serif;
-            justify-content: center;
-            align-items: center;
-        }
-    }
+    justify-content: center;    
     &__header {
+        width: 1920px;
+        margin-top: 36px;
         position: absolute;
         top:0;
-        height: 273px;
-        
+        height: 189px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        align-items: flex-start;
+        justify-content: space-evenly;  
     }
     &__caption {
         display: flex;
@@ -45,17 +34,13 @@
     }
     &__text-1 {
         color: white;
-        font-style: normal;
-        font-weight: bold;
-        font-family: sans-serif;
+        font-family: $font-family;
         font-size: 24px;
         justify-content: center;
     }
     &__text-2 {
         color: white;
-        font-style: normal;
-        font-family: sans-serif;
-        font-weight: bold;
+        font-family: $font-family;
         font-size: 165px;
         display: flex;
         padding-top: 12px;
@@ -63,7 +48,7 @@
     &__button {
         width: 150px;
         height: 60px;
-        font-family: sans-serif;
+        font-family: $font-family;
         font-size: 18px;
         color: white;
         text-align: center;
@@ -73,4 +58,32 @@
         justify-content: center;
         align-items: center;
     }
+}
+.burger-menu {
+    display: flex;
+    justify-content: center;
+    width: 30%;
+}
+
+.banner__header nav {
+    width: 513px;
+}
+
+.search {
+    display: flex;
+    justify-content: center;
+    width: 30%;
+    position: relative;
+    &__input {
+        background: none;
+        border: none;
+        border-bottom: 2px solid rgba(255, 255, 255, 1);
+    }
+    
+}
+
+.search img {
+    position: absolute;
+    // right: 0;
+
 }

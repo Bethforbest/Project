@@ -4,7 +4,9 @@
     margin-top: 152px;
     margin-bottom: 105px;
     position: relative;
+    width: 1920px;
     &__slider {
+        box-sizing: border-box;
         display: flex;
         flex-direction: row;
         flex-wrap: nowrap;

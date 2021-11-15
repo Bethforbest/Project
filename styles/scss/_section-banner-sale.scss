@@ -1,37 +1,52 @@
 .banner-sale {
     background: url(/img/banner_sale.png);
     height: 665px;
-    width: 100%;
+    width: 1920px;
     background-size: cover;
     background-repeat: no-repeat;
+    color: white;
+    position: relative;
 } 
 
-.banner-sale:hover::before {
-    
-}
-
 .banner-sale__hover {
-    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 990px;
+    height: 665px;
     background: rgba(57, 57, 57, 0.44);
+    position: absolute;
 }
 
-.banner-sale>h1 {
-    font-style: $font-style;
+.banner-sale__hover_container {
+    // width: 446px;
+    height: 307px;
+    font-family: $font-family;
+}
+
+.banner-sale h1 {
+    font-family: $font-family;
     text-transform: uppercase;
-    color: white;
     font-size: 100px;
+    // width: 335px;
+    height: 108px;
 }
 
-.banner-sale>h2 {
-    font-style: $font-style;
+.banner-sale h2 {
+    font-family: $font-family;
+    font-size: $h2-font_size;
     text-transform: capitalize;
-    color: white;
-    font-size: 48px;
+    width: 604px;
+    height: 53px;
+    margin-top: 19px; 
 }
 
-.banner-sale>span {
-    font-style: $font-style;
-    color: white;
+.banner-sale span {
+    display: inline-block;
+    font-family: $font-family;
     font-size: 16px;
-    width: 665px;
+    width: 476px;
+    height: 44px;
+    margin-bottom: 21px;
+    
 }
