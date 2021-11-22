@@ -35,7 +35,7 @@
           justify-content: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  background: url(/img/registry-form-background.png);
+  background: url(./img/registry-form-background.png);
   height: 864px;
   max-width: 1920px;
   width: 100%;
@@ -295,7 +295,7 @@
 }
 
 .banner-sale {
-  background: url(../../img/banner_sale.png);
+  background: url(./img/banner_sale.png);
   height: 665px;
   max-width: 1920px;
   background-size: cover;
@@ -475,7 +475,7 @@
 }
 
 .banner {
-  background: url(/img/index.png);
+  background: url(./img/index.png);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
@@ -699,7 +699,7 @@
 
 .custom-checkbox__before {
   position: absolute;
-  background: url(/img/pngwing.com.png);
+  background: url(./img/pngwing.com.png);
   background-size: 100%;
   top: 0;
   left: -30px;
@@ -708,7 +708,7 @@
 }
 
 #menu-input:checked ~ .menu-button > .custom-checkbox__before {
-  background-image: url(/img/close_48124.png);
+  background-image: url(./img/close_48124.png);
   background-size: 25px;
   background-repeat: no-repeat;
 }
