@@ -14,8 +14,258 @@
     box-sizing: border-box;
 }
 
+body {
+    font-family: "OpenSansCondensedBold", sans-serif;
+
+}
+
+
+@media only screen and (min-width: 1366px) and (max-width: 1920px) {
+    /* всё ок */
+    .offer__container_item {
+        margin-right: 36px;
+    }
+}
+
+@media only screen  and (min-width: 1024px) and (max-width: 1366px) {
+    /* ПОКАЗАТЬ В СЛАЙДЕРЕ 4 СЛАЙДА ВМЕСТО 5 */
+    .header__container_navigation {
+        visibility: hidden;
+    }
+    .burger-menu {
+        align-items: flex-end;
+    }
+    .search {
+        justify-content: flex-start;
+    }
+    .offer > span {
+        max-width: 800px;
+    }
+    .banner-sale__hover_container {
+        margin-left: 20px;
+        padding-right: 20px;
+    }
+    .banner-sale__hover_container > h2 {
+        max-width: 500px;
+    }
+    .partners {
+        margin-top: 0px;
+        margin-bottom: 0px;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+    .banner {
+        height: 100vh;
+    }
+    .header__container_navigation {
+        display: none;
+    }
+    .burger-menu {
+        width: 50%;
+        align-items: center;
+    }
+    .search {
+        width: 50%;
+        justify-content: center;
+    }
+    .offer {
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        height: auto;
+        justify-content: center;
+    }
+    .offer > h2 {
+        margin-top: 27px;
+    }
+    .offer > span {
+        max-width: 800px;
+        margin-bottom: 25px;
+    }
+    .offer__container {
+        flex-wrap: wrap;
+        flex-direction: row;
+        margin: 0px 150px;
+        justify-content: center;
+    }
+    .offer__container_description {
+        visibility: visible;
+    }
+    .banner-sale__hover_container {
+        margin-left: 20px;
+        padding-right: 20px;
+    }
+    .banner-sale__hover_container > h2 {
+        max-width: 500px;
+    }
+    .partners {
+        margin-top: 0px;
+        margin-bottom: 0px;
+    }
+    .registry {
+        height: auto;
+    }
+    .registry__container {
+        height: auto;
+        width: 70%;
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+    .row-item {
+        flex-direction: column;
+        flex-wrap: wrap;
+        width: auto;
+        height: auto;
+    }
+}   
+
+
+@media only screen and (min-width : 480px) and (max-width : 768px) {
+    .banner {
+        height: 100vh;
+    }
+    .banner__text-2 {
+        font-size: 120px;
+    }
+    .header__container_navigation {
+        display: none;
+    }
+    .burger-menu {
+        width: 50%;
+        align-items: center;
+    }
+    .search {
+        width: 50%;
+        justify-content: center;
+    }
+    .offer {
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        height: auto;
+        justify-content: center;
+    }
+    .offer > h2 {
+        margin-top: 27px;
+    }
+    .offer > span {
+        max-width: 800px;
+        margin-bottom: 25px;
+    }
+    .offer__container {
+        flex-wrap: wrap;
+        flex-direction: row;
+        margin: 0px 150px;
+        justify-content: center;
+    }
+    .offer__container_description {
+        visibility: visible;
+    }
+    .banner-sale__hover {
+        width: 100%;
+        height: 50%;
+        position: absolute;
+        top: 50%;
+        display: flex;
+        justify-content: center;
+    }
+    .banner-sale__hover_container {
+        margin-left: 200px;
+    }
+    .banner-sale h1 {
+        font-size: 50px;
+        height: 88px;
+    }
+    .banner-sale h2 {
+        font-size: 28px;
+        width: 604px;
+        height: 53px;
+        margin-top: 0px; 
+    }
+    .banner-sale span {
+        font-size: 16px;
+        width: 300px;
+        height: auto;
+        margin-bottom: 21px;
+    }
+    .banner-sale__hover_container {
+        margin-left: 20px;
+        padding-right: 20px;
+    }
+    .banner-sale__hover_container > h2 {
+        max-width: 500px;
+    }
+    .partners {
+        margin-top: 0px;
+        margin-bottom: 0px;
+    }
+    .registry {
+        height: auto;
+    }
+    .registry__container {
+        height: auto;
+        width: 70%;
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+    .registry__container h2 {
+        font-size: 28px;
+    }
+    .row-item {
+        flex-direction: column;
+        flex-wrap: wrap;
+        width: auto;
+        height: auto;
+    }
+    .footer__container_navigation {
+        display: flex;
+        flex-direction: column;   
+    }
+    
+    
+    
+}
+
+@media only screen and (min-width : 375px) and (max-width : 480px) {
+/* стили */
+.banner {
+    height: 100vh;
+}
+.banner__text-2 {
+    font-size: 80px;
+}
+.header__container_navigation {
+    display: none;
+}
+.burger-menu {
+    width: 50%;
+    align-items: center;
+}
+.burger-menu__checked > li {
+    padding-bottom: 5px;
+}
+.search {
+    width: 50%;
+    justify-content: center;
+}
+
+
+
+
+.footer__container_navigation {
+    display: flex;
+    flex-direction: column;   
+}
+}
+
+
+
 
  
+
 
 
 

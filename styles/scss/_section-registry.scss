@@ -1,19 +1,19 @@
 .registry {
-    font-family: $font-family;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
     background: url(/img/registry-form-background.png);
     height: 864px;
-    width: 1920px;
+    max-width: 1920px;
+    width: 100%;
     background-size: cover;
     background-repeat: no-repeat;
     &__container {
         display: flex;
         background-color: white;
         height: 664px;
-        width: 1012px;
+        max-width: 1012px;
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: space-between;
@@ -21,7 +21,7 @@
     }
 }
 
-.registry__container>h2 {
+.registry__container h2 {
     display: inline-block;
     width: 100%;
     text-align: center;
@@ -30,13 +30,29 @@
     padding-bottom: 48px;
 }
 
-.left-column {
-    width: 399px;
-    height: 400px;
+.row-item {
+    width: 1012px;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
 }
-.right-column {
+
+.row-item > div {
+    width: 50%;
+    
+}
+
+.input-item {
+    display: flex;
+    align-content: flex-end;
+    flex-direction: column;
+    height: 68px;
     width: 399px;
-    height: 400px;
+    font-size: 14px;
+    color: #454545;
+    margin-bottom: 27px;
 }
 
 .input-text {
@@ -44,11 +60,7 @@
     height: 45px;
     border-radius: 5px;
 }
-.input-date {
-    width: 115px;
-    height: 45px;
-    border-radius: 5px;
-}
+
 .select-style {
     width: 399px;
     height: 45px;
@@ -56,44 +68,110 @@
     background: none;
 }
 
-.input-item {
-    padding-top: calc(68px-45px-14px);
-    display: flex;
-    align-content: flex-end;
-    flex-direction: column;
-    height: 68px;
-    width: 399px;
-    font-size: 14px;
-    color: #454545;
-    margin-bottom: 27px;
+.input-date {
+    width: 115px;
+    height: 45px;
+    border-radius: 5px;
 }
+
 .date {
     padding-top: calc(68px-45px-14px);
     display: flex;
-    align-content: flex-end;
     flex-direction: row;
-    height: 68px;
-    width: 68px;
+    flex-wrap: nowrap;
     font-size: 14px;
     color: #454545;
     margin-bottom: 27px;
 }
-.date-picker {
-    height: 68px;
-    width: 115px;
-    &__item {
-        
-    }
+
+.date-picker__custom-input {
+    border: 1px solid #454545;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 45px;
+    width: 135px;
+    padding: 10px 15px;
+    position: relative;
+    margin-right: 37px;
+    // width: 115px;
 }
 
-.select-item {
-    padding-top: calc(68px-45px-14px);
+.date-picker__custom-input > label > img {
+    position: absolute;
+    z-index: 1;
+    right: 16px;
+    top: 10px;
+}
+
+// .datetime-reset-button {
+//     visibility: hidden;
+//     position: absolute;
+//     z-index: -1;
+// }
+// .datetime-reset-button:hover {
+//     visibility: hidden;
+// }
+// .datetime-reset-button:active {
+//     visibility: hidden;
+// }
+ 
+
+#arrival {
+    border: none;
+    height: 20px;
+    width: 110px;
+    letter-spacing: -1px;
+    font-family: "OpenSansCondensedBold";
+    font-size: 16px; 
+}
+#arrival:active {
+    border: none;
+}
+#arrival:checked {
+    border: none;
+}
+
+// .select-item {
+//     padding-top: calc(68px-45px-14px);
+//     display: flex;
+//     align-content: flex-end;
+//     flex-direction: column;
+//     height: 68px;
+//     width: 399px;
+//     font-size: 14px;
+//     color: #454545;
+//     margin-bottom: 27px;
+// }
+
+.input-radio-item {
     display: flex;
-    align-content: flex-end;
-    flex-direction: column;
-    height: 68px;
+    flex-direction: row;
+    flex-grow: nowrap;
+    align-items: center;
+    justify-content: space-between;
+    height: 45px;
     width: 399px;
     font-size: 14px;
     color: #454545;
-    margin-bottom: 27px;
+    &__button {
+        width: 80px;
+        height: 20px;
+    }
 }
+
+.banner__button_form {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    color: white;
+}
+
+.column-item {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+

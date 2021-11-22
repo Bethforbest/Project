@@ -1,10 +1,11 @@
 
 
 .partners {
+    display: flex;
     margin-top: 152px;
     margin-bottom: 105px;
     position: relative;
-    width: 1920px;
+    max-width: 1920px;
     &__slider {
         box-sizing: border-box;
         display: flex;
@@ -16,11 +17,22 @@
         width: 100%;
         max-width: 1920px;
         margin: 0 auto;
-        border: 1px solid red;
+        // border: 1px solid red;
     }
 }
 
-.partners__slider>img {
+.partners__slider img {
     height: 162px;
-    width: 303px;
+    width: 304px;
+    margin-right: 54px;
+}
+
+.slick-prev {
+    visibility: hidden;
+}
+.slick-arrow {
+    visibility: hidden;
+}
+.partners > .slick-slider {
+    display: flex;
 }

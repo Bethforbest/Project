@@ -1,20 +1,19 @@
-.wrapper {
-    max-width: 1280px;
-    margin: 0 auto;
-}
-
 .banner {
     background: url(/img/index.png);
-    height: 100vh;
-    width: 1920px;
+    // background: grey;
     background-size: cover;
     background-repeat: no-repeat;
+    background-position: center center;
+    height: 100vh;
+    max-width: 1920px;
     position: relative;
     display: flex;
     align-items: center;
-    justify-content: center;    
+    justify-content: center; 
+    color: white;   
     &__header {
-        width: 1920px;
+        width: 100%;
+        max-width: 1920px;
         margin-top: 36px;
         position: absolute;
         top:0;
@@ -25,6 +24,13 @@
         align-items: flex-start;
         justify-content: space-evenly;  
     }
+    &__header a:link {
+        text-decoration: none;
+        color: white;
+    }
+    &__header a:visited {
+        color: white;
+    }
     &__caption {
         display: flex;
         justify-content: center;
@@ -33,14 +39,10 @@
         flex-wrap: wrap;
     }
     &__text-1 {
-        color: white;
-        font-family: $font-family;
         font-size: 24px;
         justify-content: center;
     }
     &__text-2 {
-        color: white;
-        font-family: $font-family;
         font-size: 165px;
         display: flex;
         padding-top: 12px;
@@ -48,9 +50,7 @@
     &__button {
         width: 150px;
         height: 60px;
-        font-family: $font-family;
         font-size: 18px;
-        color: white;
         text-align: center;
         background: #16DCF0;
         border-radius: 5px;
@@ -58,11 +58,6 @@
         justify-content: center;
         align-items: center;
     }
-}
-.burger-menu {
-    display: flex;
-    justify-content: center;
-    width: 30%;
 }
 
 .banner__header nav {
@@ -73,17 +68,120 @@
     display: flex;
     justify-content: center;
     width: 30%;
-    position: relative;
-    &__input {
+    &__container {
+        width: 140px;
+        height: 25px;
+        position: relative;
+    }
+    &__container_input {
+        height: 20px;
         background: none;
+        position: absolute;
+        top: 0;
+        left: 0;
         border: none;
+        outline: none;
         border-bottom: 2px solid rgba(255, 255, 255, 1);
     }
-    
 }
 
-.search img {
+#inside {
     position: absolute;
-    // right: 0;
-
+    right: 3px;
+    top: -8px;
 }
+
+#outside {
+    position: absolute;
+    right: -20px;
+    top: -8px;
+    z-index: 1;
+}
+
+.header__container_navigation {
+    font-size: 18px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-items: center;
+    column-gap: 100px;
+    a:hover {
+      border-bottom: 2px solid rgba(255, 255, 255, 1);
+      padding-bottom: 5px;
+    }
+}
+
+.burger-menu {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  width: 30%;
+  height: 189px;
+  &__head {
+    width: 162px;
+    height: 32px;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+  }
+  &__head:hover {
+    border-bottom: 2px solid rgba(255, 255, 255, 1);
+    padding-bottom: 5px;
+  }
+  &__checked {
+    width: 162px;
+    position: absolute;
+    padding-top: 12px;
+    top: 30px;
+    display: block;
+    padding-left: 30px;
+    visibility: hidden;
+  }
+  &__checked li {
+    list-style-type: none;
+    padding-bottom: 20px;
+  }
+}
+
+#menu-input {
+  width: 25px;
+  height: 25px;
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+}
+
+.custom-checkbox__before {
+  position: absolute;
+  background: url(/img/pngwing.com.png);
+  background-size: 100%;
+  top: 0;
+  left: -30px;
+  width: 25px;
+  height: 25px;
+}
+
+#menu-input:checked ~ .menu-button > .custom-checkbox__before {
+  background-image: url(/img/close_48124.png);
+  background-size: 25px;
+  background-repeat: no-repeat;
+}
+
+
+.menu-button {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  left: 30px;
+  width: 26px;
+  height: 26px;
+  cursor: pointer;
+}
+.menu-button:active {
+  background: none;
+}
+
+#menu-input:checked ~ .burger-menu__checked > ul{
+  visibility: visible;
+}
+

@@ -6,47 +6,89 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300;700&family=Open+Sans:wght@700&display=swap" rel="stylesheet"> -->
     <link rel="stylesheet" href="./styles/style.css">
 </head>
 
 <body>
-
     <section class="banner">
         <div class="banner__header">
             <div class="burger-menu">
-                <img src="/img/expedia-main.png" alt="">
+                <section class="burger-menu__head">
+                    <input id="menu-input" type="checkbox">
+                    <label class="menu-button" for="menu-input">
+                        <div class="custom-checkbox__before"></div>
+                        <img src="/img/expedia-main.png" alt="">
+                    </label>
+                    <section class="burger-menu__checked">
+                        <ul class="menubox">
+                            <li><a class="menu-item" href="#">News</a></li>
+                            <li><a class="menu-item" href="#">Destinations</a></li>
+                            <li><a class="menu-item" href="#">Blog</a></li>
+                            <li><a class="menu-item" href="#">Contact</a></li>
+                        </ul>
+                    </section>
+                </section>
             </div>
-            <nav class="footer__container_navigation">
+            <nav class="header__container_navigation">
                 <a href="">News</a>
                 <a href="">Destinations</a>
                 <a href="">Blog</a>
                 <a href="">Contact</a>
             </nav>
             <div class="search">
-                <input class="search__input" type="text" id="">
-                <img src="/img/search-icon.svg" alt="">
+                <div class="search__container">
+                    <input class="search__container_input" type="text" id="">
+                    <img id="inside" src="/img/search-icon.svg" alt="">
+                    <img id="outside" src="/img/search-star.svg" alt="">
+                </div>
             </div>
         </div>
-
         <div class="banner__caption"> 
             <span class="banner__text-1">A SYMBOL OF FREEDOM</span>
             <div class="banner__text-2">Thailand</div>
             <div class="banner__button">Explore</div>
         </div>
     </section>
-    
+
     <section class="offer">
         <h2>A new sky a new life</h2>
         <span>Lorem ipsum sit amet, conseetuer adipiscing elit. Aenan comdo igula eget. Aenean massa cun sociis. Theme natoque.</span>
         <div class="offer__container">
             <div class="offer__container_item">
+                <div class="offer__container_select">
+                    <img src="/img/star.svg" alt="">
+                </div>
                 <img src="/img/offer-1.png" alt="">
+                <div class="offer__container_description">
+                    <h3>Ao Nang</h3>
+                    <span>Lorem ipsum sit amet, conseetuer adipiscing elit. Aenan comdo igula eget. Aenean massa cun sociis Theme natoque.</span>
+                    <div class="offer__container_description-button">Read more</div>
+                </div>
             </div>
             <div class="offer__container_item">
+                <div class="offer__container_select">
+                    <img src="/img/star.svg" alt="">
+                </div>
                 <img src="/img/offer-2.png" alt="">
+                <div class="offer__container_description">
+                    <h3>Ao Nang</h3>
+                    <span>Lorem ipsum sit amet, conseetuer adipiscing elit. Aenan comdo igula eget. Aenean massa cun sociis Theme natoque.</span>
+                    <div class="offer__container_description-button">Read more</div>
+                </div>
             </div>
             <div class="offer__container_item">
+                <div class="offer__container_select">
+                    <img src="/img/star.svg" alt="">
+                </div>
                 <img src="/img/offer-3.png" alt="">
+                <div class="offer__container_description">
+                    <h3>Ao Nang</h3>
+                    <span>Lorem ipsum sit amet, conseetuer adipiscing elit. Aenan comdo igula eget. Aenean massa cun sociis Theme natoque.</span>
+                    <div class="offer__container_description-button">Read more</div>
+                </div>
             </div>
         </div>
     </section>
@@ -69,59 +111,104 @@
             <img src="/img/logo-3.png" alt="">
             <img src="/img/logo-4.png" alt="">
             <img src="/img/logo-5.png" alt="">
+            <img src="/img/logo-1.png" alt="">
+            <img src="/img/logo-2.png" alt="">
+            <img src="/img/logo-3.png" alt="">
+            <img src="/img/logo-4.png" alt="">
+            <img src="/img/logo-5.png" alt="">
         </div>
     </section>
 
     <section class="registry">
         <form class="registry__container">
-            <h2 class="zagolovok">Book a ticket and just leave</h2>
-            <div class="left-column">
-                <div class="input-item">
-                    <label for="name">Name</label>
-                    <input class="input-text" type="text" id="name" required>
+            <h2>Book a ticket and just leave</h2>
+            <div class="row-item">
+                <div>
+                    <div class="input-item">
+                        <label for="name">Name</label>
+                        <input class="input-text" type="text" id="name" required>
+                    </div>
+                    <div class="input-item">
+                        <label for="surname">Surname</label>
+                        <input class="input-text" type="text" id="surname" required>
+                    </div>
                 </div>
-                <div class="input-item">
-                    <label for="surname">Surname</label>
-                    <input class="input-text" type="text" id="surname" required>
-                </div>
+                <div>
+                    <div class="input-item">
+                        <label for="hotel">Hotel</label>
+                        <select id="hotel" class="select-style" required>
+                            <option hidden selected value=""></option>
+                            <option value="Mandarin Oriental Bangkok">Mandarin Oriental Bangkok</option>
+                            <option value="Eastin Grand Hotel Sathorn">Eastin Grand Hotel Sathorn</option>
+                            <option value="Amari Pattaya">Amari Pattaya</option>
+                            <option value="RatiLanna Riverside Spa Resort">RatiLanna Riverside Spa Resort</option>
+                            <option value="Hyatt Regency Hua Hin">Hyatt Regency Hua Hin</option>
+                            <option value="Jasmine 59 Hotel">Jasmine 59 Hotel</option>
+                            <option value="Other hotel">Other hotel</option>
+                        </select>
+                    </div>
+                    <div class="input-item">
+                        <label for="city">City</label>
+                        <select id="city" class="select-style" required>
+                            <option hidden selected value=""></option>
+                            <option value="Bangkok">Bangkok</option>
+                            <option value="Nonthaburi">Nonthaburi</option>
+                            <option value="Chiang Mai">Chiang Mai</option>
+                            <option value="Hat Yai">Hat Yai</option>
+                            <option value="Udon Thani">Udon Thani</option>
+                            <option value="Khon Kaen">Khon Kaen</option>
+                            <option value="Other city">Other city</option>
+                        </select>
+                    </div>
+                </div>    
+            </div>
+            <div class="row-item">
                 <div class="date">
-                    <div class="date-picker">
-                        <div class="date-picker__item">
-                            <label for="arrival">Arrival</label>
-                            <input class="input-date" type="date" id="arrival" icon="/" required>
+                    <div class="date-picker__item">
+                        <label for="arrival">Arrival</label>
+                        <div class="date-picker__custom-input"> 
+                            <input class="input-date" type="date" id="arrival" value="2021-11-21" min="2021-11-21" max="2021-12-21">  
+                            <label for="arrival">
+                                <img src="/img/date-icon.png" alt="">
+                            </label>
+                        </div>                      
+                    </div>
+                    <div class="date-picker__item">
+                        <label for="arrival">Departure</label>
+                        <div class="date-picker__custom-input"> 
+                            <input class="input-date" type="date" id="arrival" value="2021-11-21" min="2021-11-21" max="2021-12-21">  
+                            <label for="arrival">
+                                <img src="/img/date-icon.png" alt="">
+                            </label>
+                        </div>                      
+                    </div> 
+                </div>
+                <div>
+                    <div class="input-item"> 
+                        <label>Guests</label>       
+                        <div class="input-radio-item">
+                            <div class="input-radio-item__button">
+                                <input type="radio" id="one" name="persons">
+                                <label for="one">1 Person</label>
+                            </div>
+                            <div class="input-radio-item__button">
+                                <input type="radio" id="two" name="persons">
+                                <label for="two">2 Persons</label>
+                            </div>
+                            <div class="input-radio-item__button">
+                                <input type="radio" id="four" name="persons">
+                                <label for="four">4 Persons</label>
+                            </div>
+                            <div class="input-radio-item__button">
+                                <input type="checkbox" id="">
+                                <label for="">Transfer</label>
+                            </div>
                         </div>
-                        <div class="date-picker__item"></div>
                     </div>
                 </div>
             </div>
-            <div class="right-column">
-                <div class="input-item">
-                    <label for="hotel">Hotel</label>
-                    <select id="hotel" class="select-style" required>
-                        <option hidden selected value=""></option>
-                        <option value="Mandarin Oriental Bangkok">Mandarin Oriental Bangkok</option>
-                        <option value="Eastin Grand Hotel Sathorn">Eastin Grand Hotel Sathorn</option>
-                        <option value="Amari Pattaya">Amari Pattaya</option>
-                        <option value="RatiLanna Riverside Spa Resort">RatiLanna Riverside Spa Resort</option>
-                        <option value="Hyatt Regency Hua Hin">Hyatt Regency Hua Hin</option>
-                        <option value="Jasmine 59 Hotel">Jasmine 59 Hotel</option>
-                        <option value="Other hotel">Other hotel</option>
-                    </select>
-                </div>
-                <div class="input-item">
-                    <label for="city">City</label>
-                    <select id="city" class="select-style" required>
-                        <option hidden selected value=""></option>
-                        <option value="Bangkok">Bangkok</option>
-                        <option value="Nonthaburi">Nonthaburi</option>
-                        <option value="Chiang Mai">Chiang Mai</option>
-                        <option value="Hat Yai">Hat Yai</option>
-                        <option value="Udon Thani">Udon Thani</option>
-                        <option value="Khon Kaen">Khon Kaen</option>
-                        <option value="Other city">Other city</option>
-                    </select>
-                </div>             
-                <div class="date"></div>
+            <div class="column-item">
+                <div class="banner__button banner__button_form">Explore</div>
             </div>
         </form>
     </section>
@@ -142,6 +229,11 @@
             </div>
         </div>
     </footer>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<script src="index.js"></script>
 </body>
 
 </html>

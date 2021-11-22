@@ -1,7 +1,8 @@
 .footer {
     display: flex;
     height: 187px;
-    width: 1920px;
+    max-width: 1920px;
+    width: 100%;
     &__container {
         width: 100%;
         display: flex;
@@ -9,7 +10,7 @@
         align-items: center;
     }
     &__container_navigation {
-        font-family: $font-family;
+        // font-family: $font-family;
         font-size: 18px;
         display: grid;
         grid-template-columns: repeat(4, 1fr);
@@ -18,12 +19,12 @@
         color: black;
     }
 }
-a:link {
+footer a:link {
     text-decoration: none;
     color: black;
 }
 
-a:visited {
+footer a:visited {
     text-decoration: none;
     color: black;
 }
