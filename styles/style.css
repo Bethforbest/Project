@@ -787,7 +787,8 @@ footer a:visited {
 }
 
 body {
-  font-family: "OpenSansCondensedBold", sans-serif;
+  font-family: "Open Sans Condensed", sans-serif;
+  font-weight: 700;
 }
 
 @media only screen and (min-width: 1366px) and (max-width: 1920px) {
